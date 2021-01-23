@@ -17,8 +17,8 @@ function sum(a, b) { //eslint-disable-line
 
 // Here is the test for sum(); uncomment it to run it
 /* eslint-disable no-undef */
-// testSum_tc0000(4, 7);
-// testSum_tc0001(10, 20);
+testSum_tc0000(4, 7);
+testSum_tc0001(-10, -20);
 /* eslint-enable no-undef */
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
