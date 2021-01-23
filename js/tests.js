@@ -1,7 +1,7 @@
 'use strict';
 
 // You should not modify anything in this file, but feel free to look through it!
-
+// Test for adding positive integers
 function testSum_tc0000() { //eslint-disable-line
   if (sum(4,7)[0] === 11 && sum(4,7)[1] === 'The sum of 4 and 7 is 11.') {
     console.log('%c TEST CASE 0000 FOR sum() PASSES', 'color: green');
@@ -9,7 +9,7 @@ function testSum_tc0000() { //eslint-disable-line
     console.log('%c TEST CASE 0000 FOR sum() FAILS', 'color: red');
   }
 }
-
+// Test for adding negative integers
 function testSum_tc0001() { //eslint-disable-line
   if (sum(-10,-20)[0] === -30 && sum(-10,-20)[1] === 'The sum of -10 and -20 is -30.') {
     console.log('%c TEST CASE 0001 FOR sum() PASSES', 'color: green');
