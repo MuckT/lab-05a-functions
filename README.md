@@ -25,4 +25,4 @@ This app is a sample app using JavaScript functions and a simple test component
 
 * Helping others on their lab when they were stuck also provided me with some experience explaining concepts helped me to understand them better.
 
-* Garfield Grant helped with the question six four loop.
+* Garfield Grant helped to refactor the for loop in question six. [commit 4f9c931b2e](https://github.com/MuckT/lab-05a-functions/pull/7/commits/4f9c931b2e5b96863d84588f66658cbc0474188b)
