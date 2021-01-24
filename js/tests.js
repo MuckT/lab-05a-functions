@@ -126,3 +126,12 @@ function testMultiplyAnyArrayTc0013() { //eslint-disable-line
     console.log('%c TEST CASE 0013 FOR productArray() FAILS', 'color: red');
   }
 }
+
+// Test multiplyAnyArray with a random number of characters, between one and five, with a value, between 1 and 10
+function testMultiplyAnyArrayTC0014() { //eslint-disable-line
+  if (multiplyAnyArray(testDynamicArray01)[0] === testDynamicArray01.reduce((a, b) => a * b) && multiplyAnyArray(testDynamicArray01)[1] === `The numbers ${testDynamicArray01.toString()} have a product of ${testDynamicArray01.reduce((a, b) => a * b)}.`) {
+    console.log('%c TEST CASE 0014 FOR multiplyAnyArray() PASSES', 'color: green');
+  } else {
+    console.log('%c TEST CASE 0014 FOR multiplyAnyArray() FAILS', 'color: red');
+  }
+}

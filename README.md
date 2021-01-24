@@ -24,3 +24,5 @@ This app is a sample app using JavaScript functions and a simple test component
 * This lab was fun using functions we've defined in later functions. Avoiding using built-in operators and forcing us to use existing functions we had created was a realistic approach; Building off a function previous written by someone prior, maybe not the best function, is something every developer should get used to. I also took some time to add additional test cases to wrap my head around how the tests.js works and also added some dynamic test cases. I enjoyed the challenge of using reduce as it wasn't something I have used in an array prior and I see how useful it could be for arrays of dynamic length.
 
 * Helping others on their lab when they were stuck also provided me with some experience explaining concepts helped me to understand them better.
+
+* Garfield Grant helped to refactor the for loop in question six. [commit 4f9c931b2e](https://github.com/MuckT/lab-05a-functions/pull/7/commits/4f9c931b2e5b96863d84588f66658cbc0474188b)
