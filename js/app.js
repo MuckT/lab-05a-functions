@@ -128,8 +128,10 @@ function productArray(productArray) {//eslint-disable-line
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
+/* eslint-disable no-undef */
 testMultiplyArrayTc0009(testArray00);
 testMultiplyArrayTc0010(testArray01);
+/* eslint-enable no-undef */
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 

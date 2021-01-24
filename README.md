@@ -7,8 +7,10 @@ I built an app with a direct and powerful purpose. My app does all of the things
 ### Author: Student/Group Name
 
 ### Links and Resources
+
 * [submission PR](http://xyz.com)
-* Any Links you used as reference
+* [Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+* [JavaScript Array reduce() Method](https://www.w3schools.com/jsref/jsref_reduce.asp#:~:text=The%20reduce()%20method%20reduces,for%20array%20elements%20without%20values.)
 
 ### Reflections and Comments
 * Consider including the answers to your daily journal and submission questions here
