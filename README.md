@@ -8,6 +8,7 @@ This app is a sample app using JavaScript functions and a simple test component
 
 ### Links and Resources
 
+* [PR #7](https://github.com/MuckT/lab-05a-functions/pull/7)
 * [PR #6](https://github.com/MuckT/lab-05a-functions/pull/6)
 * [PR #5](https://github.com/MuckT/lab-05a-functions/pull/5)
 * [PR #4](https://github.com/MuckT/lab-05a-functions/pull/4)
