@@ -63,7 +63,7 @@ function testSumAndMultiplyTc0006() { //eslint-disable-line
   }
 }
 
-// Test sum of array with three items
+// Test sum of array with three positive integers
 function testSumArrayTc0007() { //eslint-disable-line
   if (sumArray(testArray00)[0] === 9 && sumArray(testArray00)[1] === '2,3,4 was passed in as an array of numbers, and 9 is their sum.') {
     console.log('%c TEST CASE 0007 FOR sumArray() PASSES', 'color: green');
@@ -72,7 +72,7 @@ function testSumArrayTc0007() { //eslint-disable-line
   }
 }
 
-// Test sum of array with 5 items mixed float, int, positive, and negative
+// Test sum of array with five items mixed: float, int, positive, and negative
 function testSumArrayTc0008() { //eslint-disable-line
   if (sumArray(testArray01)[0] === -4.3 && sumArray(testArray01)[1] === '1,2.2,-3,-4.5,0 was passed in as an array of numbers, and -4.3 is their sum.') {
     console.log('%c TEST CASE 0008 FOR sumArray() PASSES', 'color: green');
@@ -81,14 +81,25 @@ function testSumArrayTc0008() { //eslint-disable-line
   }
 }
 
-function testMultiplyArray() { //eslint-disable-line
-  if (multiplyArray(testArray00)[0] === 24 && multiplyArray(testArray)[1] === 'The numbers 2,3,4 have a product of 24.') {
-    console.log('%c TEST FOR multiplyArray() PASSES', 'color: green');
+// Test productArray with three positive integers
+function testMultiplyArrayTc0009() { //eslint-disable-line
+  if (productArray(testArray00)[0] === 24 && productArray(testArray00)[1] === 'The numbers 2,3,4 have a product of 24.') {
+    console.log('%c TEST CASE 0009 FOR productArray() PASSES', 'color: green');
   } else {
-    console.log('%c TEST FOR multiplyArray() FAILS', 'color: red');
+    console.log('%c TEST CASE 0009 FOR productArray() FAILS', 'color: red');
   }
 }
 
+// Test sum of array with five items mixed: float, int, positive, and negative
+function testMultiplyArrayTc0010() { //eslint-disable-line
+  if (productArray(testArray01)[0] === 0 && productArray(testArray01)[1] === 'The numbers 1,2.2,-3,-4.5,0 have a product of 0.') {
+    console.log('%c TEST CASE 0010 FOR productArray() PASSES', 'color: green');
+  } else {
+    console.log('%c TEST CASE 0010 FOR productArray() FAILS', 'color: red');
+  }
+}
+
+// Test sum of array with five positive integers
 function testMultiplyAnyArray() { //eslint-disable-line
   if (multiplyAnyArray(testDynamicArray)[0] === 120 && multiplyAnyArray(testDynamicArray)[1] === 'The numbers 1,2,3,4,5 have a product of 120.') {
     console.log('%c TEST FOR multiplyAnyArray() PASSES', 'color: green');
