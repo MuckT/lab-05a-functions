@@ -123,7 +123,7 @@ function multiplyArray(total, num) { //eslint-disable-line
   return multiply(total, num)[0];
 }
 
-function productArray(productArray) {//eslint-disable-line
+function productArray(productArray) { //eslint-disable-line
   let localProduct = productArray.reduce(multiplyArray);
   let message = `The numbers ${productArray} have a product of ${localProduct}.`;
   return [localProduct, message];
@@ -155,6 +155,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here - Made answer to #5, productArray(), dynamic
 let testDynamicArray00 = [1, 2, 3, 4, 5]; //eslint-disable-line
+// This Function uses a for loop to get a dynamic list
+function multiplyAnyArray(arry) { //eslint-disable-line
+  let localProduct = 0;
+  for (let i = 0; i < arry.length; i++) {
+    if (i === 0) {
+      localProduct = multiply(arry[i],1)[0];
+    } else {
+      localProduct = multiply(localProduct,arry[i])[0];
+    }
+  }
+  let message = `The numbers ${arry} have a product of ${localProduct}.`;
+  return [localProduct, message];
+}
 
 // Make a random Array
 let testDynamicArray01 = Array.from({length: Math.ceil(Math.random() * 5)}, () => Math.ceil(Math.random() * 10)); // use Math.ceil to avoid zeros
@@ -164,6 +177,7 @@ let testDynamicArray01 = Array.from({length: Math.ceil(Math.random() * 5)}, () =
 /* eslint-disable no-undef */
 testMultiplyAnyArrayTc0012(testDynamicArray00);
 testMultiplyAnyArrayTc0013(testDynamicArray01);
+testMultiplyAnyArrayTC0014(testDynamicArray01);
 
 /* eslint-disable no-undef */
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
