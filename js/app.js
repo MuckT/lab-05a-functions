@@ -117,12 +117,21 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) {
-  //eslint-disable-line
+function multiplyArray(total, num) { //eslint-disable-line
+  return multiply(total, num)[0];
+}
+
+function productArray(productArray) {//eslint-disable-line
+  let localProduct = productArray.reduce(multiplyArray);
+  let message = `The numbers ${productArray} have a product of ${localProduct}.`;
+  return [localProduct, message];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+/* eslint-disable no-undef */
+testMultiplyArrayTc0009(testArray00);
+testMultiplyArrayTc0010(testArray01);
+/* eslint-enable no-undef */
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
