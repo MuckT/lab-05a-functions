@@ -86,16 +86,24 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-let testArray = [2, 3, 4]; //eslint-disable-line
+let testArray00 = [2, 3, 4];
+let testArray01 = [1, 2.2, -3, -4.5, 0];
 
-function sumArray(sumArr) {
-  //eslint-disable-line
+function addArray(total, num) {
+  return sum(total, num)[0];
+}
+
+function sumArray(sumArr) { //eslint-disable-line
+  let localSum = sumArr.reduce(addArray);
+  let message = `${sumArr.toString()} was passed in as an array of numbers, and ${localSum} is their sum.`;
+  return [localSum, message];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-
-// testSumArray(testArray);
-
+/* eslint-disable no-undef */
+testSumArrayTc0007(testArray00);
+testSumArrayTc0008(testArray01);
+/* eslint-enable no-undef */
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
