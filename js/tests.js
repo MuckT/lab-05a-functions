@@ -2,7 +2,7 @@
 
 // You should not modify anything in this file, but feel free to look through it!
 // Test for adding positive integers
-function testSum_tc0000() { //eslint-disable-line
+function testSumTc0000() { //eslint-disable-line
   if (sum(4,7)[0] === 11 && sum(4,7)[1] === 'The sum of 4 and 7 is 11.') {
     console.log('%c TEST CASE 0000 FOR sum() PASSES', 'color: green');
   } else {
@@ -10,7 +10,7 @@ function testSum_tc0000() { //eslint-disable-line
   }
 }
 // Test for adding negative integers
-function testSum_tc0001() { //eslint-disable-line
+function testSumTc0001() { //eslint-disable-line
   if (sum(-10,-20)[0] === -30 && sum(-10,-20)[1] === 'The sum of -10 and -20 is -30.') {
     console.log('%c TEST CASE 0001 FOR sum() PASSES', 'color: green');
   } else {
@@ -18,11 +18,12 @@ function testSum_tc0001() { //eslint-disable-line
   }
 }
 
-function testMultiply() { //eslint-disable-line
+// Test for multiplying positive integers
+function testMultiplyTc0002() { //eslint-disable-line
   if (multiply(5,9)[0] === 45 && multiply(5,9)[1] === 'The product of 5 and 9 is 45.') {
-    console.log('%c TEST FOR multiply() PASSES', 'color: green');
+    console.log('%c TEST CASE 0002 FOR multiply() PASSES', 'color: green');
   } else {
-    console.log('%c TEST FOR multiply() FAILS', 'color: red');
+    console.log('%c TEST CASE 0002 FOR multiply() FAILS', 'color: red');
   }
 }
 
