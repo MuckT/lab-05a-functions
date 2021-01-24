@@ -26,11 +26,39 @@ function testMultiply() { //eslint-disable-line
   }
 }
 
-function testSumAndMultiply() { //eslint-disable-line
-  if (sumAndMultiply(4, 7, 5)[0] === 16 && sumAndMultiply(4, 7, 5)[1] === 140 && sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
-    console.log('%c TEST FOR sumAndMultiply() PASSES', 'color: green');
+// Test for multiplying positive floats
+function testMultiplyTc0003() { //eslint-disable-line
+  if (multiply(5.3,9.5)[0] === 50.35 && multiply(5.3,9.5)[1] === 'The product of 5.3 and 9.5 is 50.35.') {
+    console.log('%c TEST CASE 0003 FOR multiply() PASSES', 'color: green');
   } else {
-    console.log('%c TEST FOR sumAndMultiply() FAILS', 'color: red');
+    console.log('%c TEST CASE 0003 FOR multiply() FAILS', 'color: red');
+  }
+}
+
+// Test of sum and multiplying positive integers
+function testSumAndMultiplyTc0004() { //eslint-disable-line
+  if (sumAndMultiply(4, 7, 5)[0] === 16 && sumAndMultiply(4, 7, 5)[1] === 140 && sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
+    console.log('%c TEST CASE 0004 FOR sumAndMultiply() PASSES', 'color: green');
+  } else {
+    console.log('%c TEST CASE 0004 FOR sumAndMultiply() FAILS', 'color: red');
+  }
+}
+
+// Test of sum and multiplying negative integers
+function testSumAndMultiplyTc0005() { //eslint-disable-line
+  if (sumAndMultiply(-4, -7, -5)[0] === -16 && sumAndMultiply(-4, -7, -5)[1] === -140 && sumAndMultiply(-4, -7, -5)[2] === '-4 and -7 and -5 sum to -16.' && sumAndMultiply(-4, -7, -5)[3] === 'The product of -4 and -7 and -5 is -140.') {
+    console.log('%c TEST CASE 0005 FOR sumAndMultiply() PASSES', 'color: green');
+  } else {
+    console.log('%c TEST CASE 0005 FOR sumAndMultiply() FAILS', 'color: red');
+  }
+}
+
+// Test of sum and multiplying mixed positive and negative floats
+function testSumAndMultiplyTc0006() { //eslint-disable-line
+  if (sumAndMultiply(-4.5, 7.5, -5.25)[0] === -2.25 && sumAndMultiply(-4.5, 7.5, -5.25)[1] === 177.1875 && sumAndMultiply(-4.5, 7.5, -5.25)[2] === '-4.5 and 7.5 and -5.25 sum to -2.25.' && sumAndMultiply(-4.5, 7.5, -5.25)[3] === 'The product of -4.5 and 7.5 and -5.25 is 177.1875.') {
+    console.log('%c TEST CASE 0006 FOR sumAndMultiply() PASSES', 'color: green');
+  } else {
+    console.log('%c TEST CASE 0006 FOR sumAndMultiply() FAILS', 'color: red');
   }
 }
 
