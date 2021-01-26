@@ -16,8 +16,9 @@ function sum(a, b) {
 
 // Here is the test for sum(); uncomment it to run it
 /* eslint-disable no-undef */
-testSumTc0000(4, 7);
-testSumTc0001(-10, -20);
+testSum(4, 7);
+// testSumTc0000(4, 7);
+// testSumTc0001(-10, -20);
 /* eslint-enable no-undef */
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -39,8 +40,9 @@ function multiply(a, b) {
 
 // Here is the test for multiply(); uncomment it to run it
 /* eslint-disable no-undef */
-testMultiplyTc0002(5, 9);
-testMultiplyTc0003(5.3, 9.5);
+testMultiply(5,9);
+// testMultiplyTc0002(5, 9);
+// testMultiplyTc0003(5.3, 9.5);
 /* eslint-enable no-undef */
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -68,9 +70,10 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 /* eslint-disable no-undef */
-testSumAndMultiplyTc0004(4,7,5);
-testSumAndMultiplyTc0005(-4,-7,-5);
-testSumAndMultiplyTc0006(-4.5, 7.5, -5.25);
+testSumAndMultiply(4,7,5);
+// testSumAndMultiplyTc0004(4,7,5);
+// testSumAndMultiplyTc0005(-4,-7,-5);
+// testSumAndMultiplyTc0006(-4.5, 7.5, -5.25);
 /* eslint-enable no-undef */
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -86,7 +89,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-let testArray00 = [2, 3, 4];
+let testArray = [2, 3, 4];
 let testArray01 = [1, 2.2, -3, -4.5, 0];
 let testArray02 = Array.from({length: Math.floor(Math.random() * 40)}, () => Math.floor(Math.random() * 20));
 
@@ -102,9 +105,10 @@ function sumArray(sumArr) { //eslint-disable-line
 
 // Here is the test for sumArray(); uncomment it to run it
 /* eslint-disable no-undef */
-testSumArrayTc0007(testArray00);
-testSumArrayTc0008(testArray01);
-testSumArrayTc0009(testArray02);
+testSumArray(testArray);
+// testSumArrayTc0007(testArray);
+// testSumArrayTc0008(testArray01);
+// testSumArrayTc0009(testArray02);
 /* eslint-enable no-undef */
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -119,20 +123,21 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(total, num) { //eslint-disable-line
+function reduceFunction(total, num) { //eslint-disable-line
   return multiply(total, num)[0];
 }
 
-function productArray(productArray) { //eslint-disable-line
-  let localProduct = productArray.reduce(multiplyArray);
+function multiplyArray(productArray) { //eslint-disable-line
+  let localProduct = productArray.reduce(reduceFunction);
   let message = `The numbers ${productArray} have a product of ${localProduct}.`;
   return [localProduct, message];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
 /* eslint-disable no-undef */
-testMultiplyArrayTc0010(testArray00);
-testMultiplyArrayTc0011(testArray01);
+testMultiplyArray(testArray);
+// testMultiplyArrayTc0010(testArray);
+// testMultiplyArrayTc0011(testArray01);
 /* eslint-enable no-undef */
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
@@ -166,12 +171,13 @@ function multiplyAnyArray(arry) { //eslint-disable-line
 }
 
 // Make a random Array
-let testDynamicArray00 = [1, 2, 3, 4, 5]; //eslint-disable-line
+let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 let testDynamicArray01 = Array.from({length: Math.ceil(Math.random() * 5)}, () => Math.ceil(Math.random() * 10)); // use Math.ceil to avoid zeros
 
 // Here is the test for multiplyArray(); uncomment it to run it
 /* eslint-disable no-undef */
-testMultiplyAnyArrayTc0012(testDynamicArray00);
-testMultiplyAnyArrayTc0013(testDynamicArray01);
-testMultiplyAnyArrayTC0014(testDynamicArray01);
+testMultiplyAnyArray(testDynamicArray);
+// testMultiplyAnyArrayTc0012(testDynamicArray00);
+// testMultiplyAnyArrayTc0013(testDynamicArray01);
+// testMultiplyAnyArrayTC0014(testDynamicArray01);
 /* eslint-disable no-undef */
